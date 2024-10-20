@@ -1,4 +1,5 @@
-This file contains the list of the changes that my setup makes to the default GIMP configuration. The list may be incomplete:
+# Changes
+The following contains the list of the changes that my setup makes to the default GIMP configuration. The list may be incomplete:
 
 - Removed a lot of the tools from the toolbox and removed their shortcuts. The toolbox now contains only the following tools:
     - Pencil Tool
@@ -25,17 +26,69 @@ This file contains the list of the changes that my setup makes to the default GI
 - Removed image properties viewer shortcut.
 - Added crop to selection shortcut `Ctrl+Shift+X`
 - Added shortcut for reverting the image `F12`. This is useful when working with another program that modifies the image file so you can quickly reload it from disk.
-- Added shortcut for switching the image into RGB mode - `Numpad /`
-- Added shortcut for switching the image into indexed mode - `Numpad *`
+- Added shortcut for switching the image into RGB mode - `1`
+- Added shortcut for switching the image into indexed mode - `2`
+- Added shortcut for switching the image into graycasle mode - `3`
 - Added shortcut for adding a new layer mask `l`
 - Added shortcut for applying the layer mask `;`
 - Added shortcuts for toggling different layer mask settings `,`, `.` and `'`
 - Removed "Strong Undo" and "Strong Redo" shortcuts.
 - Replaced the "Redo" shortcut with `Ctrl+Shift+Z` instead of `Ctrl+Y`.
 - Added file override shortcut `Shift+Alt+S`
-- Added shortcut for changing the grid settings `Ctrl+Shift+Alt+G`
-- Added shortcut for toggling the grid visibility `Ctrl+Shift+G`
+- Added shortcut for changing the grid settings `Shift+Alt+G`
+- Added shortcut for toggling the grid visibility `Alt+G`
 - Added shortcut for "Layer To Image Size" function `Alt+Q`. This makes it easier to work with layers when, by default, in GIMP, almost always you end up with a layer that has a weird yellow border around it or outside of the image bounds.
+- Changed some of the default shortcuts. See list below.
+
+# Shortcut summary
+The following is a list of the shortcuts groupped by their categories.
+
+## Basic Tools
+Basic tools don't have a modifier key.
+Pencil: `N` ==> `P` (since paintbrush has bee unbound)
+Gradient: `G`
+Bucket Fill: `Shift + B` ==> `B`
+Clone: `C`
+Warp: `W`
+Eraser: `Shift + E` ==> `E`
+Text: `T`
+Align: `Q` ==> `A`
+
+## Transform Tools
+Transform tools also don't have a modifier key.
+Rotate: `Shift + R` ==> `R`
+Scale: `Shift + S` ==> `S`
+Move: `M`
+Flip: `Shift + F` ==> `F`
+
+## Selection Tools
+Selection tools always start with `Shift`.
+Rectangle: `R` ==> `Shift + R`
+Ellipse: `E` ==> `Shift + E`
+Fuzzy Select: `U` ===> `Shift + W` (wand)
+Free Select: `F` ===> `Shift + L` (lassso)
+Select by Color: `Shift + O` ===> `Shift + C`
+
+## Other
+Revert: `F12`
+Layer to image size: `Alt+Q`
+Crop to Selection: `Ctrl + Shift + X` (like in MS paint and probably other programs)
+
+## Layer
+Layer mask management shortcuts are on the right side of the keyboard.
+Add Layer Mask: `L`
+Apply Layer Mask: `;`
+Edit Layer Mask (toggle): `,`
+Show Layer Mask (toggle): `
+Disable Layer Mask (toggle): `.`
 
 
-The new shortcuts currently don't collide with any of the defaults ones, however, since I removed a lot of the default shortcuts I will probably change the complicated custom shortcuts to something simpler in the future. 
+## Grid management
+Grid always start with `Alt`
+Grid settings: `Shift+Alt+G`
+Toggle grid visibility: `Alt+G`
+
+## Image Color Modes
+Mode - RGB: `1`
+Mode - Indexed: `2`
+Mode - Grayscale: `3`
